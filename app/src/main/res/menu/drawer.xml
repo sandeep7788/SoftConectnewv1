@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/deshboard"
+            android:checked="false"
+            android:icon="@drawable/ic_home"
+            android:title="DeshBoard" />
+
+        <item
+            android:id="@+id/tests"
+            android:checked="false"
+            android:icon="@drawable/ic_test"
+            android:title="Tests" />
+        <item
+            android:id="@+id/reports"
+            android:checked="false"
+            android:icon="@drawable/reports"
+            android:title="Result" />
+
+        <item
+            android:id="@+id/change_password"
+            android:checked="false"
+            android:icon="@drawable/ic_change_pass"
+            android:title="Change Password" />
+        <item
+            android:id="@+id/profile"
+            android:checked="false"
+            android:icon="@drawable/my_profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/contect"
+            android:checked="false"
+            android:icon="@drawable/ic_test"
+            android:title="Contact Us"/>
+
+        <item
+            android:id="@+id/logout"
+            android:checked="false"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+
+
+    </group>
+</menu>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
+    tools:context="com.exam.softconect.Activity.Demo"
+    android:orientation="vertical">
+
+    <com.nishant.math.MathView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        auto:engine="MathJax"
+        android:layout_marginTop="10dp"
+        android:gravity="left|start"
+        android:layout_marginRight="200dp">
+    </com.nishant.math.MathView>
+    
+    <com.nishant.math.MathView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        auto:engine="MathJax"
+        android:layout_marginTop="10dp"
+        android:theme="@android:style/Widget.TextView"
+        android:gravity="left">
+    </com.nishant.math.MathView>
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+    </TextView>
+
+
+</LinearLayout>

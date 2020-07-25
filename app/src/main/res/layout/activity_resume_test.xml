@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/textur_bg"
+    tools:context=".Activity.ResumeTestActivity">
+
+    <LinearLayout
+        android:id="@+id/lay_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/btn_review"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight=".5"
+            android:background="@drawable/review_round_border_button"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="7dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_bookmark"
+                android:tint="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Review"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight=".5"
+            android:background="@drawable/next_round_border_button"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="7dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Next"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_next"
+                android:tint="#ffffff" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/lay_bottom"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/lay"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:src="@drawable/back_arrow_white"
+                android:tint="#ffffff" />
+
+            <TextView
+                android:id="@+id/txt_quiz_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:paddingRight="5dp"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_title_quiz"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@id/txt_quiz_time"
+                android:layout_toRightOf="@id/img_back"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:id="@+id/btn_clear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:layout_weight=".5"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="7dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_refresh"
+                    android:tint="#11C1F3" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Clear"
+                    android:textColor="#11C1F3"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_finish"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:layout_weight=".5"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="7dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_right"
+                    android:tint="#11C1F3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Finish"
+                    android:textColor="#11C1F3"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/txt_question_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Q1."
+                        android:textColor="#757575"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/bariol_bold">
+
+                    </TextView>
+
+                    <com.nishant.math.MathView
+                        android:id="@+id/txt_question"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="viewStart"
+
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="-19dp">
+                    </com.nishant.math.MathView>
+
+
+
+                    <!--<io.github.kexanie.library.MathView-->
+                        <!--android:id="@+id/txt_question"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--auto:engine="KaTeX"-->
+                        <!--&gt;-->
+                    <!--</io.github.kexanie.library.MathView>-->
+
+
+
+                    <RadioGroup
+                        android:id="@+id/groupradio"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp">
+
+                        <RadioButton
+                            android:id="@+id/rb_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#757575"/>
+
+                        <com.nishant.math.MathView
+                            android:id="@+id/rb_1_Answer"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="-40dp"
+                            android:layout_height="wrap_content"
+                            android:theme="@android:style/Widget.TextView">
+                            
+                        </com.nishant.math.MathView>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@android:color/black"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="7dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginLeft="45dp"/>
+                        <RadioButton
+                            android:id="@+id/rb_2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#757575" />
+                        <com.nishant.math.MathView
+                            android:id="@+id/rb_2_Answer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="50dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="-40dp"
+
+                            >
+                        </com.nishant.math.MathView>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@android:color/black"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="7dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginLeft="45dp"/>
+
+                        <RadioButton
+                            android:id="@+id/rb_3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#757575" />
+                        <com.nishant.math.MathView
+                            android:id="@+id/rb_3_Answer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="-40dp"
+                            android:paddingRight="100dp"
+                            >
+                        </com.nishant.math.MathView>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@android:color/black"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="7dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginLeft="45dp"/>
+
+                        <RadioButton
+                            android:id="@+id/rb_4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#757575" />
+                        <com.nishant.math.MathView
+                            android:id="@+id/rb_4_Answer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="-40dp"
+                            >
+                        </com.nishant.math.MathView>
+
+<!--
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@android:color/black"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="7dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginLeft="45dp"/>
+-->
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </ScrollView>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
